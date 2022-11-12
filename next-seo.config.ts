@@ -14,7 +14,7 @@ export const NEXT_SEO_DEFAULT: NextSeoProps = {
     site_name: 'Wilfred Brett',
     images: [
       {
-        url: `https://hunterbecton.com/social.jpg`,
+        url: `https://web-designer-developer-portfolio-next-js.vercel.app/social.jpg`,
         width: 1200,
         height: 600,
         alt: 'Web designer and developer in Atlanta, GA',
