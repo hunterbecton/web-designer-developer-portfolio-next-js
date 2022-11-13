@@ -81,12 +81,11 @@ export const AnimatedTitle: FC<AnimatedTitleProps> = ({ as, text, styles }) => {
       );
     case 'h2':
       return (
-        <h2 className={styles} aria-label={text} role='heading'>
+        <h2 ref={titleRef} className={styles} aria-label={text} role='heading'>
           {text.split(' ').map((word, index) => {
             return (
               <motion.span
                 className='mr-[0.25em] inline-block whitespace-nowrap'
-                ref={titleRef}
                 aria-hidden='true'
                 key={index}
                 initial='hidden'
@@ -116,12 +115,11 @@ export const AnimatedTitle: FC<AnimatedTitleProps> = ({ as, text, styles }) => {
       );
     case 'h3':
       return (
-        <h3 className={styles} aria-label={text} role='heading'>
+        <h3 ref={titleRef} className={styles} aria-label={text} role='heading'>
           {text.split(' ').map((word, index) => {
             return (
               <motion.span
                 className='mr-[0.25em] inline-block whitespace-nowrap'
-                ref={titleRef}
                 aria-hidden='true'
                 key={index}
                 initial='hidden'
@@ -151,12 +149,11 @@ export const AnimatedTitle: FC<AnimatedTitleProps> = ({ as, text, styles }) => {
       );
     case 'h4':
       return (
-        <h4 className={styles} aria-label={text} role='heading'>
+        <h4 ref={titleRef} className={styles} aria-label={text} role='heading'>
           {text.split(' ').map((word, index) => {
             return (
               <motion.span
                 className='mr-[0.25em] inline-block whitespace-nowrap'
-                ref={titleRef}
                 aria-hidden='true'
                 key={index}
                 initial='hidden'
@@ -186,12 +183,11 @@ export const AnimatedTitle: FC<AnimatedTitleProps> = ({ as, text, styles }) => {
       );
     default:
       return (
-        <h2 className={styles} aria-label={text} role='heading'>
+        <h2 ref={titleRef} className={styles} aria-label={text} role='heading'>
           {text.split(' ').map((word, index) => {
             return (
               <motion.span
                 className='mr-[0.25em] inline-block whitespace-nowrap'
-                ref={titleRef}
                 aria-hidden='true'
                 key={index}
                 initial='hidden'
